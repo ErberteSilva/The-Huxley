@@ -8,5 +8,5 @@ if M*v <=N:
        m = m*v
        v = v+1
 else:
-    print("sem multiplos menores que",N)
+    m="sem multiplos menores que "+str(N)
 print(m)
