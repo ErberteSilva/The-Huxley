@@ -1,11 +1,12 @@
+
 valor = float(input())
-if 0 > valor > 100 :
+if 0 > valor or valor > 100 :
     print("Fora de intervalo")
-elif 0 < valor > 25 :
-    print("[0,25]")
-elif 25 < valor > 50 :
-    print("(25,50]")
-elif 50 < valor > 75 :
-    print("(50,75]")
-elif 75 < valor > 100 :
-    print("(75,100]")
+elif valor <= 25 :
+    print("Intervalo [0,25]")
+elif valor <= 50 :
+    print("Intervalo (25,50]")
+elif valor <= 75 :
+    print("Intervalo (50,75]")
+elif valor <= 100 :
+    print("Intervalo (75,100]")
