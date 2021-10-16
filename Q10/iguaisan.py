@@ -1,7 +1,7 @@
-my_list=[int(input() for cont in range(101))]
-cont = 0 
+my_list=[]
+for i in range(101):
+    my_list.append(input())
 
-while n <101:
+for n in range(100):
     if my_list[n] == my_list[-1]:
-        print (my_list[n])
-    cont = cont+1
+        print(n)
