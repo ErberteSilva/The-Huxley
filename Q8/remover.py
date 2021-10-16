@@ -1,4 +1,6 @@
-first = str(input())
-sec = str(input())
-last = (first - sec)
-print(last)
+complete = (input())
+remover = (input())
+for rep in remover :
+    complete = complete.replace(rep, '')
+    final = complete
+print(final)
