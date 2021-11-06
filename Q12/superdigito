@@ -1,0 +1,11 @@
+def superdigito(In_value):
+    if len(In_value)==1:
+        return In_value
+    else:
+        contador=0
+        for digito in In_value:
+            contador+=int(digito)
+        return superdigito(str(contador))
+
+In_value,sleep=input().split()
+print(superdigito(In_value*int(sleep)))
